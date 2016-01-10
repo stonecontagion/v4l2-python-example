@@ -68,7 +68,6 @@ class Camera(object):
         self.main_loop()
     
     def process_image(self, buf):
-        return
         video_buffer = self.buffers[buf.index].buffer
         data = video_buffer.read(buf.bytesused)
         try:
